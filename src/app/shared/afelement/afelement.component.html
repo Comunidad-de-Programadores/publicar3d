@@ -42,9 +42,9 @@
         <div *ngFor="let imageElem of image.elements; index as j" >
           <img crossorigin="anonymous" id="{{'elem'+(j)+'-thumb'}}" src={{imageElem.url}} />
         </div>
-        <!--img *ngIf="image.type == 'image' || image.type == 'vcard' || image.type == 'poster' || image.type == undefined" crossorigin="anonymous" id="{{'img'+(i+tagNumberinit)}}" src={{image.url}} /-->
-        <img *ngIf="image.type == 'image' || image.type == 'vcard' || image.type == 'poster' || image.type == undefined" crossorigin="anonymous" id="{{'city'+(i)+'-thumb'}}" src={{image.url}} />
-        <video autoplay *ngIf="image.type == 'video'" id="{{'video'+(i+tagNumberinit)}}" crossOrigin="anonymous" playsinline webkitplaysinline 
+        <img *ngIf="image.type == 'image' || image.type == 'vcard' || image.type == 'poster' || image.type == undefined" crossorigin="anonymous" id="{{'img'+(i+tagNumberinit)}}" src={{image.url}} />
+        <!--img *ngIf="image.type == 'image' || image.type == 'vcard' || image.type == 'poster' || image.type == undefined" crossorigin="anonymous" id="{{'city'+(i)+'-thumb'}}" src={{image.url}} /-->
+        <video *ngIf="image.type == 'video'" id="{{'video'+(i+tagNumberinit)}}" crossOrigin="anonymous" playsinline webkitplaysinline 
         controls muted src="{{image.url}}" ></video>
         <!--a-asset-item *ngIf="image.type == 'model'" id="{{'model'+(i+tagNumberinit)}}" src="../../../assets/models/alien.glb"></a-asset-item-->
     </div>

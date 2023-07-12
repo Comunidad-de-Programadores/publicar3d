@@ -79,8 +79,8 @@ export class AfelementComponent implements OnInit {
              }*/
         
         marker.insertAdjacentHTML('beforeEnd', 
-        entities+'<a-entity position="0 1 0" template="src: #plane" data-src="#city'+i+'" data-thumb="#city'+i+'-thumb"></a-entity>');
-        //'<a-entity template="src: #plane" data-thumb="#img123" class="clickable" gesture-handler="minScale: 0.25; maxScale: 10" rotation="-90, 0, 0" geometry="primitive: plane; height: '+height+'; width: '+width+'" material="shader: flat; src: #img'+indexPath+'"></a-entity>');
+        entities+//'<a-entity position="0 1 0" template="src: #plane" data-src="#city'+i+'" data-thumb="#city'+i+'-thumb"></a-entity>');
+        '<a-entity template="src: #plane" data-thumb="#img123" class="clickable" gesture-handler="minScale: 0.25; maxScale: 10" rotation="-90, 0, 0" geometry="primitive: plane; height: '+height+'; width: '+width+'" material="shader: flat; src: #img'+indexPath+'"></a-entity>');
         //'<a-image class="clickable" gesture-handler="minScale: 0.25; maxScale: 10" position="0 1 0" rotation="-90, 0, 0" src="#img'+indexPath+'" width="'+width+'" height="'+height+'"></a-image>');
       }
       
